@@ -1,0 +1,52 @@
+import math
+
+while True:
+    f = input("¿Que area quieres saber?(circulo, cuadrado, rectangulo, triangulo, poligonos-regulares, rombo o trapecio)")
+    
+    if f == "cuadrado":
+        print("A = l2")
+        l = int(input("Dime la longitud del lado:"))
+        print("A =", l*l)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")
+        
+    if f == "triangulo":
+        print("A = b·h/2")
+        b = int(input("Dime la longitud de la base:"))
+        h = int(input("Dime la altura:"))
+        print("A =", b*h/2)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")
+        
+    if f == "rectangulo":
+        print("A = b·h")
+        b = int(input("Dime la longitud de la base:"))
+        h = int(input("Dime la altura:"))
+        print("A =", b*h)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")  
+        
+    if f == "circulo":
+        print("A = πr2")
+        r = int(input("Dime el radio del circulo:"))
+        print("A =", math.pi*r*r)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")        
+        
+    if f == "rombo":
+        print("A = D·d/2")
+        D = int(input("Dime la longitud de la diagonal mayor:"))
+        d = int(input("Dime la longitud de la diagonal menor:"))
+        print("A =", D*d/2)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")        
+        
+    if f == "trapecio":
+        print("(B+b)·h/2")
+        B = int(input("Dime la longitud de la base mayor:"))
+        b = int(input("Dime la longitud de la base menor:"))
+        h = int(input("Dime la altura del trapecio:"))
+        print("A =", (B+b)*h/2)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")        
+        
+    if f == "poligonos-regulares":
+        print("A = p·ap/2")
+        p = int(input("Dime el perimetro del poligono:"))
+        ap = int(input("Dime el apotema del poligono:"))
+        print("A =", p*ap/2)
+        print("Recuerda que la medida es al cuadrado dependiendo de la medida que uses.EJ:cm2, m2...")
